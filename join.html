@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#004f8b" />
+  <title>Join iPLAN – Membership</title>
+  <meta name="description" content="Join iPLAN – India Chapter of ACM SIGPLAN. Membership is free for ACM members." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header id="topbar">
+  <div id="topbar-inner">
+    <a href="index.html" id="topbar-logo">
+      <img src="assets/images/iplan-logo.png" alt="ACM iPLAN logo" />
+      <span class="site-title"><span>i</span>PLAN</span>
+    </a>
+    <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="topnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="join.html">Join iPLAN</a></li>
+    </ul>
+  </div>
+</header>
+
+<div id="banner">
+  <div id="banner-inner">
+    <h1><span class="iplan-i">i</span>PLAN</h1>
+    <p class="tagline">India Chapter of ACM SIGPLAN</p>
+  </div>
+</div>
+
+<div id="page">
+
+  <main id="main">
+
+    <h1>Join iPLAN</h1>
+
+    <div class="section-block">
+      <p>
+        Membership in iPLAN is currently <strong>free for ACM members</strong>.
+        By joining, you will be added to the iPLAN mailing list and receive announcements about
+        conferences, workshops, schools, hackathons, and other activities associated with the chapter.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <h2>Who should join?</h2>
+      <ul>
+        <li>Researchers in programming languages, compilers, and related formal methods.</li>
+        <li>Graduate and undergraduate students interested in PL and systems.</li>
+        <li>Compiler engineers, language designers, and software practitioners.</li>
+        <li>Faculty members teaching programming languages or compilers courses.</li>
+        <li>Anyone who cares about advancing the PL and compilers ecosystem in India.</li>
+      </ul>
+
+      <p style="margin-top:1rem;">
+        If you are not yet an ACM member, please first become a member via the
+        <a href="https://india.acm.org" target="_blank" rel="noopener">ACM India site</a>,
+        and then complete the iPLAN membership form below.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <h2>Membership Request Form</h2>
+
+      <form id="join-form" onsubmit="handleSubmit(event)" novalidate>
+
+        <div class="form-group">
+          <label for="name">Full name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="e.g. Priya Sharma" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="acm">ACM membership number <span class="req">*</span></label>
+          <input type="text" id="acm" name="acm" required placeholder="e.g. 1234567" />
+        </div>
+
+        <div class="form-group">
+          <label for="org">Organization / Institution</label>
+          <input type="text" id="org" name="org" autocomplete="organization" placeholder="e.g. IIT Bombay" />
+        </div>
+
+        <div class="form-group">
+          <label for="role">Job title / Role</label>
+          <input type="text" id="role" name="role" placeholder="e.g. PhD Student, Compiler Engineer" />
+        </div>
+
+        <div class="form-group">
+          <label for="city">City of residence</label>
+          <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="e.g. Mumbai" />
+        </div>
+
+        <div class="form-group">
+          <label for="homepage">Homepage URL <em style="font-weight:400;font-size:0.85rem;">(optional)</em></label>
+          <input type="url" id="homepage" name="homepage" placeholder="https://" />
+        </div>
+
+        <div class="form-group">
+          <label for="info">Additional information <em style="font-weight:400;font-size:0.85rem;">(optional)</em></label>
+          <textarea id="info" name="info" placeholder="Research interests, how you heard about iPLAN, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit membership request</button>
+
+        <p id="form-msg" style="display:none;margin-top:1rem;padding:0.7rem 1rem;border-radius:3px;font-family:var(--font-ui);font-size:0.9rem;"></p>
+      </form>
+    </div>
+
+  </main>
+
+  <aside id="sidebar">
+    <div class="sidebar-box">
+      <h3>Membership Benefits</h3>
+      <ul>
+        <li>iPLAN mailing list announcements</li>
+        <li>Early access to event registrations</li>
+        <li>Network with India's PL &amp; compilers community</li>
+        <li>Discounted rates at ACM SIGPLAN events</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>Not an ACM member?</h3>
+      <p style="font-size:0.88rem;line-height:1.5;color:var(--text-muted);margin-bottom:0.6rem;">
+        Join ACM first — student memberships are available at reduced rates.
+      </p>
+      <a href="https://india.acm.org" target="_blank" rel="noopener" class="btn-cta" style="font-size:0.82rem;padding:0.4rem 0.9rem;">Join ACM India →</a>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>Questions?</h3>
+      <p style="font-size:0.88rem;line-height:1.5;color:var(--text-muted);">
+        Contact <strong>Prof. Uday Khedker</strong><br />
+        IIT Bombay<br />
+        <a href="http://www.cse.iitb.ac.in/~uday" target="_blank" rel="noopener">cse.iitb.ac.in/~uday</a>
+      </p>
+    </div>
+  </aside>
+
+</div>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="members.html">Members</a>
+      <a href="join.html">Join</a>
+      <a href="https://www.sigplan.org/" target="_blank" rel="noopener">ACM SIGPLAN</a>
+      <a href="https://india.acm.org" target="_blank" rel="noopener">ACM India</a>
+    </div>
+    <div>iPLAN – India Chapter of ACM SIGPLAN &nbsp;|&nbsp; <a href="https://iplan.acm.org/" target="_blank" rel="noopener">iplan.acm.org</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('join-form');
+  const msg  = document.getElementById('form-msg');
+
+  // Basic validation
+  const name  = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const acm   = document.getElementById('acm').value.trim();
+
+  if (!name || !email || !acm) {
+    msg.style.display = 'block';
+    msg.style.background = '#fff0f0';
+    msg.style.border = '1px solid #e0b0b0';
+    msg.style.color = '#8b0000';
+    msg.textContent = 'Please fill in all required fields (name, email, ACM membership number).';
+    return;
+  }
+
+  // In production this would POST to a backend. For now, show a success message.
+  form.style.display = 'none';
+  msg.style.display = 'block';
+  msg.style.background = '#eaf5ea';
+  msg.style.border = '1px solid #a3d4a3';
+  msg.style.color = '#1a5c1a';
+  msg.innerHTML = '<strong>Thank you!</strong> Your membership request has been received. You will be added to the iPLAN mailing list shortly.';
+}
+</script>
+</body>
+</html>
