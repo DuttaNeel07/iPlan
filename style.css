@@ -32,10 +32,10 @@ body {
 a { color: var(--blue-mid); text-decoration: none; }
 a:hover { text-decoration: underline; color: var(--blue-dark); }
 
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
   outline: 2px solid var(--blue-mid);
   outline-offset: 2px;
 }
