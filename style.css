@@ -1,7 +1,4 @@
-/* ============================================================
-   ACM iPLAN – India Chapter of ACM SIGPLAN
-   Stylesheet – mirrors iSOFT layout & design language
-   ============================================================ */
+
 
 /* --- Reset & base ----------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,21 +16,30 @@
   --border:      #d0dde8;
   --font-main:   'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-ui:     'IBM Plex Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
-  --max-w:       1100px;
+  --max-w:       1140px;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-main);
-  font-size: 17px;
-  line-height: 1.72;
+  font-size: 16.5px;
+  line-height: 1.75;
   color: var(--text);
   background: var(--white);
 }
 
 a { color: var(--blue-mid); text-decoration: none; }
 a:hover { text-decoration: underline; color: var(--blue-dark); }
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--blue-mid);
+  outline-offset: 2px;
+}
+
 
 img { max-width: 100%; display: block; }
 
@@ -54,8 +60,8 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
-  height: 60px;
+  padding: 0 1.4rem;
+  height: 58px;
 }
 
 #topbar-logo {
@@ -66,7 +72,7 @@ img { max-width: 100%; display: block; }
 }
 
 #topbar-logo img {
-  height: 44px;
+  height: 36px;
   width: auto;
   display: block;
 }
@@ -109,7 +115,10 @@ img { max-width: 100%; display: block; }
   font-weight: 400;
   color: #aaaaaa;
   text-decoration: none;
-  transition: color 0.15s;
+  transition:
+  color 0.2s ease,
+  background 0.2s ease,
+  opacity 0.2s ease;
   white-space: nowrap;
 }
 
@@ -149,7 +158,7 @@ img { max-width: 100%; display: block; }
 #banner {
   width: 100%;
   background: linear-gradient(135deg, #003d6e 0%, #005c9e 45%, #0a7fd4 100%);
-  padding: 3rem 1.5rem 2.5rem;
+  padding: 4rem 1.5rem 3.2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -184,10 +193,10 @@ img { max-width: 100%; display: block; }
 #banner p.tagline {
   font-family: var(--font-ui);
   font-size: 1.05rem;
-  color: #b3d9f7;
+  color: #dcecff;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 /* Announcement strip */
@@ -280,7 +289,7 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--blue-border);
   border-top: 3px solid var(--blue-mid);
   border-radius: 2px;
-  padding: 1.2rem 1.3rem;
+  padding: 1rem 1.1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -554,10 +563,20 @@ img { max-width: 100%; display: block; }
 
   #topbar { position: relative; }
   .members-grid { grid-template-columns: 1fr; }
+  #topbar-logo img {
+    height: 30px;
+  }
+  #topbar-inner {
+    padding: 0 1rem;
+    height: 56px;
+  }
 }
 
 @media (max-width: 480px) {
   #page { padding: 1.5rem 1rem; }
-  #banner { padding: 2rem 1rem 1.5rem; }
+  #banner {padding: 2.8rem 1rem 2.2rem;}
   #banner h1 { font-size: 1.5rem; }
+  .sidebar-box {
+    padding: 0.95rem 1rem;
+  }
 }
