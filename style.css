@@ -108,8 +108,8 @@ img { max-width: 100%; display: block; }
 #topnav li a {
   display: block;
   padding: 0 0.9rem;
-  height: 60px;
-  line-height: 60px;
+  height: 58px;
+  line-height: 58px;
   font-family: var(--font-ui);
   font-size: 0.95rem;
   font-weight: 400;
@@ -177,18 +177,18 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
-#banner h1 {
+/* #banner h1 {
   font-family: var(--font-ui);
   font-size: 2.6rem;
   font-weight: 600;
   color: var(--white);
   letter-spacing: -0.01em;
   margin-bottom: 0.4rem;
-}
+} */
 
-#banner h1 .iplan-i {
+/* #banner h1 .iplan-i {
   color: #f5a623;
-}
+} */
 
 #banner p.tagline {
   font-family: var(--font-ui);
@@ -197,6 +197,12 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.banner-logo {
+  height: 90px;
+  width: auto;
+  margin: 0 auto 1rem;
+  display: block;
 }
 
 /* Announcement strip */
@@ -536,9 +542,12 @@ img { max-width: 100%; display: block; }
 /* --- Responsive ------------------------------------------- */
 @media (max-width: 768px) {
   #page { grid-template-columns: 1fr; gap: 2rem; }
-  #sidebar { order: -1; }
-  #banner h1 { font-size: 1.8rem; }
+  /* #sidebar { order: -1; } */
+  /* #banner h1 { font-size: 1.8rem; } */
   #menu-toggle { display: flex; }
+  .banner-logo {
+    height: 65px;
+  }
 
   #topnav {
     display: none;
@@ -557,10 +566,10 @@ img { max-width: 100%; display: block; }
   #topnav li a {
     height: auto;
     line-height: 1;
-    padding: 0.9rem 1.5rem;
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
     border-bottom: 1px solid #2a2a2a;
   }
-
   #topbar { position: relative; }
   .members-grid { grid-template-columns: 1fr; }
   #topbar-logo img {
@@ -575,8 +584,11 @@ img { max-width: 100%; display: block; }
 @media (max-width: 480px) {
   #page { padding: 1.5rem 1rem; }
   #banner {padding: 2.8rem 1rem 2.2rem;}
-  #banner h1 { font-size: 1.5rem; }
+  /* #banner h1 { font-size: 1.5rem; } */
   .sidebar-box {
     padding: 0.95rem 1rem;
+  }
+  .banner-logo {
+    height: 54px;
   }
 }
